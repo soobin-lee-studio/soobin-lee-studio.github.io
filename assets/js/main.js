@@ -34,21 +34,6 @@
     b.addEventListener("click", () => setLang(b.dataset.setLang))
   );
 
-  /* ---------- TOC active state (project pages) ---------- */
-  const tocLinks = [...document.querySelectorAll('.toc a[href^="#"]')];
-  const chapters = tocLinks.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
-  if (chapters.length && "IntersectionObserver" in window) {
-    const io = new IntersectionObserver(
-      (entries) =>
-        entries.forEach((e) => {
-          if (!e.isIntersecting) return;
-          tocLinks.forEach((a) => a.classList.toggle("is-active", a.getAttribute("href") === `#${e.target.id}`));
-        }),
-      { rootMargin: "-30% 0px -60% 0px" }
-    );
-    chapters.forEach((c) => io.observe(c));
-  }
-
   /* ---------- Reveal on scroll ---------- */
   const reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {

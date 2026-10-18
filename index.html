@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Soobin Lee</title>
-  <meta name="description" content="AI 가전의 UX를 기획하는 이수빈의 포트폴리오. 리서치에서 서비스 구조, 인터랙션, GUI까지. / Portfolio of Soobin Lee, UX strategist for AI home appliances.">
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
-  <meta property="og:type" content="website">
+  <title>이수빈 Soobin Lee — UX Strategist</title>
+  <meta name="description" content="LG전자 HS사업본부 AI가전기획팀에서 AI 가전의 UX를 기획하는 이수빈의 포트폴리오. / Soobin Lee, UX strategist for AI home appliances at LG Electronics.">
+  <meta name="theme-color" content="#f6f6f3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f0f10" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="profile">
   <meta property="og:title" content="Soobin Lee — UX Strategist">
   <meta property="og:description" content="AI 가전의 UX를 기획하는 이수빈의 포트폴리오.">
   <meta property="og:image" content="https://soobin-lee-studio.github.io/assets/img/og.jpg">
@@ -30,79 +30,101 @@
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="./">
-        <svg class="brand-mark" viewBox="0 0 22 22" fill="currentColor" aria-hidden="true"><circle cx="7" cy="11" r="6"/><rect x="15" y="5" width="3.2" height="12"/></svg>
         <span class="brand-name">Soobin Lee</span>
+        <span class="brand-role">UX Strategist</span>
       </a>
-      <nav class="nav" aria-label="Main">
-        <a href="./" aria-current="page">Projects</a>
-        <a href="about.html">About</a>
-      </nav>
-      <div class="header-tools">
-        <div class="lang-toggle" role="group" aria-label="Language">
-          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
-          <span class="sep" aria-hidden="true">/</span>
-          <button type="button" data-set-lang="ko" aria-pressed="true">KO</button>
+      <div class="header-right">
+        <nav class="nav" aria-label="Main">
+          <a href="./" aria-current="page"><span class="no">01</span>About</a>
+          <a href="projects.html"><span class="no">02</span>Projects</a>
+        </nav>
+        <div class="tools">
+          <div class="lang-toggle" role="group" aria-label="Language">
+            <button type="button" data-set-lang="ko" aria-pressed="true">KO</button>
+            <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <button class="theme-toggle" type="button" aria-label="Toggle light/dark mode">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          </button>
         </div>
-        <button class="theme-toggle" type="button" aria-label="Toggle light/dark mode">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-        </button>
       </div>
     </div>
   </header>
 
   <main id="main" class="wrap">
-    <h1 class="statement reveal">
-      <span lang="ko">
-        <span class="dim">망설이는 순간을 찾아</span> 리서치하고,<br>
-        <span class="dim">AI가 개입할 타이밍을</span> 설계하고,<br>
-        <span class="dim">화면 위의 경험으로</span> 구체화합니다.
-      </span>
-      <span lang="en">
-        <span class="dim">To find where users hesitate,</span> I research.<br>
-        <span class="dim">To time when AI steps in,</span> I design.<br>
-        <span class="dim">To make it tangible,</span> I build the experience.
-      </span>
-    </h1>
-
-    <section class="works" aria-labelledby="works-title">
-      <div class="sec-head">
-        <h2 id="works-title">Projects</h2>
-        <span class="aside">2 Case Studies</span>
+    <!-- Who I am -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <p class="label reveal"><span class="no">●</span><span lang="ko">이수빈 · UX 기반 기획자</span><span lang="en">UX-driven Planner</span></p>
+          <h1 class="hero-title reveal">Soobin<br>Lee</h1>
+        </div>
+        <figure class="portrait reveal">
+          <img src="assets/img/profile.jpg" alt="Soobin Lee" width="1000" height="1500">
+          <figcaption><span lang="ko">이수빈</span><span lang="en">Soobin Lee</span></figcaption>
+        </figure>
       </div>
-
-      <div class="work-grid is-wide">
-        <a class="work reveal" href="projects/sous-chef-agent.html">
-          <div class="work-thumb">
-            <img src="assets/img/projects/sous-chef/thumb.jpg" alt="AI oven LCD with Sous Chef Agent" width="1200" height="900">
-          </div>
-          <p class="work-date">2026.02 – 2026.07</p>
-          <h3 class="work-title">AI Oven: Sous Chef Agent</h3>
-          <ul class="tags">
-            <li class="type">UX Strategy</li>
-            <li>AI Agent</li>
-            <li>User Research</li>
-            <li>LCD UI</li>
-          </ul>
-          <p class="work-desc" lang="ko">판단 부담이 집중되는 오븐 세팅·조리 구간을 AI 개입 기회로 정의하고, 12가지 AI 기능을 3개 서비스로 구조화했습니다. 북미 사용자 20명 대상 프로토타입 테스트로 검증한 뒤 To-Be 경험과 '27–'28 로드맵으로 구체화했습니다.</p>
-          <p class="work-desc" lang="en">Defined oven setup and cooking as the key moments for AI to step in, and structured 12 AI features into 3 services. Validated with a prototype test of 20 North American users, then shaped it into a To-Be experience and a 2027–28 roadmap.</p>
-        </a>
-
-        <a class="work reveal" href="projects/food-intelligence.html">
-          <div class="work-thumb">
-            <img src="assets/img/projects/food-intelligence/thumb.jpg" alt="AI refrigerator at the CES 2025 booth" width="1200" height="900">
-          </div>
-          <p class="work-date">2023.08 – 2025.02</p>
-          <h3 class="work-title">AI Refrigerator: Food Intelligence</h3>
-          <ul class="tags">
-            <li class="type">AI Service Planning</li>
-            <li>Food AI</li>
-            <li>Platform</li>
-            <li>Human-in-the-loop</li>
-          </ul>
-          <p class="work-desc" lang="ko">한·일 20가구 조사로 식재료 관리의 부담을 발견하고, 입·출고 인식 냉장고를 사용자와 커머스를 잇는 플랫폼으로 확장했습니다. 신뢰도 기반 인터랙션과 10개의 AI 경험을 설계했으며, CES 2025에 전시되어 본부 Creative Award를 수상했습니다.</p>
-          <p class="work-desc" lang="en">Research with 20 households in Korea and Japan revealed the burden of managing food. I expanded a food-recognizing refrigerator into a platform linking users and commerce, and designed confidence-based interactions and 10 AI experiences. Exhibited at CES 2025 and won the division's Creative Award.</p>
-        </a>
+      <div class="hero-foot reveal">
+        <p class="motto">Think <em class="accent-text">HARD</em>, Work <em class="accent-text">SMART</em></p>
+        <p class="hero-sub">
+          <span lang="ko">LG전자 HS사업본부 AI가전기획팀에서 AI 가전의 UX를 기획하는 선임 이수빈입니다. 치열하게 생각하고 스마트하게 접근해, 최적의 시나리오를 도출합니다.</span>
+          <span lang="en">I plan the UX of AI home appliances on the AI Home Appliance Planning Team at LG Electronics. I think hard and work smart to find the best scenario.</span>
+        </p>
+        <a class="hero-cta" href="projects.html">Projects →</a>
       </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="spec">
+      <h2 class="label"><span class="no">01</span><span lang="ko">소개</span><span lang="en">Introduction</span></h2>
+      <div class="about-intro">
+        <div class="reveal">
+          <p class="about-lead" lang="ko">사용자가 망설이는 순간을 찾고,<br><mark>AI가 개입할 타이밍</mark>을 설계합니다.</p>
+          <p class="about-lead" lang="en">I find the moments users hesitate,<br>and design <mark>when AI should step in</mark>.</p>
+        </div>
+        <div class="reveal">
+          <div class="about-text" lang="ko">
+            <p>한국·일본·북미 사용자 조사에서 출발해 서비스 구조, 인터랙션, GUI까지 하나의 흐름으로 연결합니다.</p>
+            <p>AI 오븐과 AI 냉장고의 새로운 경험을 기획했고, AI 냉장고 프로젝트는 CES 2025에 전시되었습니다.</p>
+          </div>
+          <div class="about-text" lang="en">
+            <p>Starting from user research in Korea, Japan, and North America, I connect service structure, interaction, and GUI into one continuous flow.</p>
+            <p>I've shaped new experiences for an AI oven and an AI refrigerator — the latter exhibited at CES 2025.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Now -->
+    <section class="spec">
+      <h2 class="label"><span class="no">02</span><span lang="ko">현재</span><span lang="en">Currently</span></h2>
+      <dl class="facts reveal">
+        <div><dt>Company</dt><dd><span lang="ko">LG전자</span><span lang="en">LG Electronics</span><span class="sub" lang="ko">HS사업본부</span><span class="sub" lang="en">HS (Home Appliance Solution) Company</span></dd></div>
+        <div><dt>Team</dt><dd><span lang="ko">AI가전기획팀</span><span lang="en">AI Home Appliance Planning</span></dd></div>
+        <div><dt>Role</dt><dd><span lang="ko">UX 기반 기획자 · 선임</span><span lang="en">Senior UX Planner</span></dd></div>
+      </dl>
+    </section>
+
+    <!-- Highlights -->
+    <section class="spec">
+      <h2 class="label"><span class="no">03</span><span lang="ko">주요 성과</span><span lang="en">Highlights</span></h2>
+      <ul class="matrix reveal">
+        <li><span class="no">01</span><div><strong><span lang="ko">CES 2025 전시</span><span lang="en">Exhibited at CES 2025</span></strong><span>AI Refrigerator: Food Intelligence</span></div></li>
+        <li><span class="no">02</span><div><strong><span lang="ko">본부 Creative Award 수상</span><span lang="en">Division Creative Award</span></strong><span>AI Refrigerator: Food Intelligence</span></div></li>
+        <li><span class="no">03</span><div><strong><span lang="ko">북미 사용자 검증 리드</span><span lang="en">Led North American user validation</span></strong><span>AI Oven: Sous Chef Agent · UT n=20</span></div></li>
+        <li><span class="no">04</span><div><strong><span lang="ko">AI Agent 서비스 구조화</span><span lang="en">Structured an AI agent service</span></strong><span lang="ko">12개 AI 기능 → 3개 서비스 · '27–'28 로드맵</span><span lang="en">12 AI features → 3 services · 2027–28 roadmap</span></div></li>
+      </ul>
+    </section>
+
+    <!-- Expertise -->
+    <section class="spec">
+      <h2 class="label"><span class="no">04</span><span lang="ko">역량</span><span lang="en">Expertise</span></h2>
+      <ul class="matrix reveal">
+        <li><span class="no">A</span><div><strong>AI Agent UX</strong><span lang="ko">개입 타이밍, 통제권, 신뢰 설계</span><span lang="en">Intervention timing, user control, trust</span></div></li>
+        <li><span class="no">B</span><div><strong>User Research</strong><span lang="ko">FGD · 가정 방문 심층 인터뷰 · 프로토타입 UT</span><span lang="en">FGD · In-home interviews · Prototype usability tests</span></div></li>
+        <li><span class="no">C</span><div><strong>Service Strategy</strong><span lang="ko">서비스 구조화 · 가치 순환 모델 · 로드맵</span><span lang="en">Service architecture · Value-loop models · Roadmaps</span></div></li>
+        <li><span class="no">D</span><div><strong>Interaction &amp; GUI</strong><span lang="ko">LCD UI · Voice·Touch 멀티모달</span><span lang="en">LCD UI · Voice &amp; touch multimodal</span></div></li>
+      </ul>
     </section>
   </main>
 

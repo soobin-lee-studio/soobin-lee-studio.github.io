@@ -45,23 +45,25 @@ LG전자 HS사업본부 AI가전기획팀
 
 ```
 .
-├── index.html                  # Home — statement + project grid
-├── about.html                  # About — 소개, 현재, 주요 성과, 역량
+├── index.html                  # About (landing) — 이름·소개, 현재, 주요 성과, 역량
+├── projects.html               # Projects — 번호형 프로젝트 인덱스
+├── about.html                  # 이전 주소 호환용 리다이렉트
 ├── projects/
 │   ├── sous-chef-agent.html    # Case study 01
 │   └── food-intelligence.html  # Case study 02
 └── assets/
     ├── css/style.css           # Design tokens, layout, light/dark theme
-    ├── js/main.js              # Language & theme toggle, scroll reveal, TOC, lightbox
+    ├── js/main.js              # Language & theme toggle, scroll reveal, lightbox
     └── img/                    # Optimized images (profile, covers, slides)
 ```
 
 ## Design & Tech
 
-- **Archival minimal** — 흰 배경, 절제된 타이포그래피, 장식 없는 라인 기반 레이아웃
+- **Swiss index layout** — 왼쪽 라벨 열 + 본문 열의 그리드, 굵은 라인과 번호 체계로 정보 위계 구성
+- **Brand accent** — 포트폴리오 표지의 *Think HARD, Work SMART* 블루(#3D2BFF) 단일 포인트 컬러
 - **Typography** — [Pretendard](https://github.com/orioncactus/pretendard) 단일 서체(고딕), 굵기와 명도로만 위계 구성
 - **Bilingual (KO / EN)** — 헤더 토글로 전환, 선택 언어 저장 · `?lang=en` 쿼리 지원
-- **Case study layout** — 번호 챕터 + 스크롤 위치를 따라가는 sticky 목차, 슬라이드 클릭 확대
+- **Case study layout** — 좌측 sticky 챕터 라벨, 가로형 메타 스트립, 슬라이드 클릭 확대
 - **Light / Dark** — 시스템 설정을 따르고, 헤더 토글로 전환 (선택 값 저장)
 - **Accessible & responsive** — 시맨틱 마크업, 키보드 포커스, `prefers-reduced-motion` 대응, 375px 모바일까지 대응
 - **Zero build** — 순수 HTML / CSS / JavaScript, GitHub Pages에서 그대로 배포 (`.nojekyll`)
