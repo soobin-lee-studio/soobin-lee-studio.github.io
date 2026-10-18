@@ -352,3 +352,9 @@ blockquote.quote { margin: 0; padding: 18px 20px; border-left: 2px solid var(--a
   .project-meta { grid-template-columns: 1fr 1fr; }
   .case-meta { grid-template-columns: 1fr 1fr; }
 }
+
+/* ---------- Case study helpers ---------- */
+.case-hero .eyebrow { margin-top: 40px; }
+.summary-grid { margin-top: 32px; }
+.case-subh { margin-top: 56px; font-size: 22px; letter-spacing: -0.03em; font-weight: 700; }
+.quote .sub { display: block; margin-top: 6px; font-size: 13px; color: var(--muted); }
