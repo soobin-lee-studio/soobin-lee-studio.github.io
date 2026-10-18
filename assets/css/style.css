@@ -175,7 +175,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* ---------- About ---------- */
 .about-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
-.about-photo { position: sticky; top: 100px; border-radius: var(--radius); overflow: hidden; background: var(--surface-2); aspect-ratio: 4 / 5; }
+.about-photo { margin: 0; position: sticky; top: 100px; border-radius: var(--radius); overflow: hidden; background: var(--surface-2); aspect-ratio: 4 / 5; }
 .about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
 
 .about-lead { font-size: clamp(24px, 2.8vw, 34px); line-height: 1.4; letter-spacing: -0.035em; font-weight: 600; }
