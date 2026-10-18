@@ -16,6 +16,24 @@
     });
   }
 
+  /* ---------- Language toggle ---------- */
+  const LANG_KEY = "sl-lang";
+  const setLang = (lang) => {
+    root.dataset.lang = lang;
+    root.lang = lang;
+    const title = root.dataset[lang === "en" ? "titleEn" : "titleKo"];
+    if (title) document.title = title;
+    document.querySelectorAll("[data-set-lang]").forEach((b) =>
+      b.setAttribute("aria-pressed", String(b.dataset.setLang === lang))
+    );
+    try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+  };
+  if (!root.dataset.titleKo) root.dataset.titleKo = document.title;
+  setLang(root.dataset.lang === "en" ? "en" : "ko");
+  document.querySelectorAll("[data-set-lang]").forEach((b) =>
+    b.addEventListener("click", () => setLang(b.dataset.setLang))
+  );
+
   /* ---------- TOC active state (project pages) ---------- */
   const tocLinks = [...document.querySelectorAll('.toc a[href^="#"]')];
   const chapters = tocLinks.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);

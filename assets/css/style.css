@@ -259,3 +259,18 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .p-meta { width: 100%; grid-template-columns: 96px minmax(0, 1fr); gap: 6px 14px; }
   .p-meta dt { text-align: left; }
 }
+
+/* ---------- Language (KO / EN) ---------- */
+html[data-lang="en"] body [lang="ko"] { display: none !important; }
+html:not([data-lang="en"]) body [lang="en"] { display: none !important; }
+.lang-toggle { display: flex; align-items: center; gap: 4px; }
+.lang-toggle button {
+  border: 0; padding: 2px; background: none; cursor: pointer;
+  font: inherit; font-weight: 500; color: var(--muted);
+}
+.lang-toggle button:hover { color: var(--ink); }
+.lang-toggle button[aria-pressed="true"] { color: var(--ink); }
+.lang-toggle .sep { color: var(--faint); }
+.chapter > div > h3:first-child { margin-top: 0; }
+.chapter > div + div > h3:first-child { margin-top: 0; }
+.chapter > .rows + div > h3:first-child, .chapter > .quote + div > h3:first-child { margin-top: 40px; }
