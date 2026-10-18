@@ -258,4 +258,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .rows > li { grid-template-columns: 1fr; gap: 4px; }
   .p-next { flex-direction: column; }
   .p-next a { max-width: none; }
+  .p-meta { width: 100%; grid-template-columns: 96px minmax(0, 1fr); gap: 6px 14px; }
+  .p-meta dt { text-align: left; }
 }
