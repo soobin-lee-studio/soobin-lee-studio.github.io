@@ -1,0 +1,5 @@
+.DS_Store
+# 원본 파일은 저장소에 올리지 않음 (최적화된 이미지만 assets/에 포함)
+portfolio.pdf
+profile.JPG
+.claude/
