@@ -16,23 +16,19 @@
     });
   }
 
-  /* ---------- Header border on scroll ---------- */
-  const header = document.querySelector(".site-header");
-  const onScroll = () => header && header.classList.toggle("is-scrolled", window.scrollY > 8);
-  onScroll();
-  window.addEventListener("scroll", onScroll, { passive: true });
-
-  /* ---------- Active nav (index only) ---------- */
-  const navLinks = [...document.querySelectorAll('.nav a[href^="#"]')];
-  const sections = navLinks.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
-  if (sections.length && "IntersectionObserver" in window) {
-    const setActive = (id) =>
-      navLinks.forEach((a) => a.setAttribute("aria-current", a.getAttribute("href") === `#${id}` ? "true" : "false"));
+  /* ---------- TOC active state (project pages) ---------- */
+  const tocLinks = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const chapters = tocLinks.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+  if (chapters.length && "IntersectionObserver" in window) {
     const io = new IntersectionObserver(
-      (entries) => entries.forEach((e) => e.isIntersecting && setActive(e.target.id)),
-      { rootMargin: "-45% 0px -50% 0px" }
+      (entries) =>
+        entries.forEach((e) => {
+          if (!e.isIntersecting) return;
+          tocLinks.forEach((a) => a.classList.toggle("is-active", a.getAttribute("href") === `#${e.target.id}`));
+        }),
+      { rootMargin: "-30% 0px -60% 0px" }
     );
-    sections.forEach((s) => io.observe(s));
+    chapters.forEach((c) => io.observe(c));
   }
 
   /* ---------- Reveal on scroll ---------- */
@@ -54,7 +50,7 @@
   }
 
   /* ---------- Lightbox (case study figures) ---------- */
-  const figures = document.querySelectorAll(".figure button[data-full]");
+  const figures = document.querySelectorAll(".fig button[data-full]");
   if (figures.length && typeof HTMLDialogElement === "function") {
     const dialog = document.createElement("dialog");
     dialog.className = "lightbox";
