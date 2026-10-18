@@ -59,8 +59,8 @@ LG전자 HS사업본부 AI가전기획팀
 
 ## Design & Tech
 
-- **Swiss index layout** — 왼쪽 라벨 열 + 본문 열의 그리드, 굵은 라인과 번호 체계로 정보 위계 구성
-- **Brand accent** — 포트폴리오 표지의 *Think HARD, Work SMART* 블루(#3D2BFF) 단일 포인트 컬러
+- **Simple index layout** — 왼쪽 라벨 열 + 본문 열의 그리드, 얇은 라인과 여백만으로 정보 위계 구성
+- **Restrained color** — 무채색 중심, 포트폴리오 표지의 블루(#3D2BFF)는 텍스트 선택 등 최소한으로만 사용
 - **Typography** — [Pretendard](https://github.com/orioncactus/pretendard) 단일 서체(고딕), 굵기와 명도로만 위계 구성
 - **Bilingual (KO / EN)** — 헤더 토글로 전환, 선택 언어 저장 · `?lang=en` 쿼리 지원
 - **Case study layout** — 좌측 sticky 챕터 라벨, 가로형 메타 스트립, 슬라이드 클릭 확대
@@ -82,6 +82,10 @@ python3 -m http.server 4173
 
 `main` 브랜치에 푸시하면 GitHub Pages가 루트(`/`)를 기준으로 자동 배포합니다.
 (Settings → Pages → Branch: `main` / `/ (root)`)
+
+## Credits
+
+- LG 심볼: [Wikimedia Commons — File:LG logo (2023).svg](https://commons.wikimedia.org/wiki/File:LG_logo_(2023).svg) (Public domain, LG Corp. 상표)
 
 ## License
 
